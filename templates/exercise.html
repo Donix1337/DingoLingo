@@ -1,0 +1,14 @@
+{% extends "structure.html" %}
+
+{% block main %}
+
+<div class="excercise">
+    <div class="excercise-c">
+        <h1 class="ex-title">Write: {{ exercise_self }}</h1>
+        <input type="text" id="user_answer" class=".ex-input" placeholder="Type Here" spellcheck="false" maxlength="60" autocomplete="off">
+        <button class="btn btn-ex" id="submit_answer_{{ exercise_type }}" onClick="check_answer_{{ exercise_type }}()">Check</button>
+        <div id="result"><h2 id="result_text"></h2><a href="">Try again?</a></div>
+    </div>
+    <div class="close"><img src="{{ url_for('static',filename='img/close.svg') }}" alt="close" class="close-img">{{ exercise_name }}</div>
+</div>
+{% endblock main %}

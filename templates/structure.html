@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static',filename='js/app.js') }}" defer></script>
+    <title>DingoLingo</title>
+</head>
+<body>
+    <nav id="nav" aria-label="navigation">
+        <a href="dashboard" class="item">
+            Exercices
+        </a>
+        <a href="/" class="item logo">
+            LingoDingo
+        </a>
+        <div class="dropdown">
+            <a href="" class="item">
+                Language: <img src="{{ url_for('static',filename='img/flag.svg') }}" alt="language">
+            </a>
+            <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Russian</a>
+                <a href="#">Norwegian</a>
+            </div>
+        </div>
+    </nav>
+    {% block main %}
+
+        <h1>structure.html</h1>
+
+    {% endblock main %}
+
+    <img src="{{ url_for('static',filename='img/help.svg') }}" alt="help" class="help">
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% extends "structure.html" %}
+
+{% block main %}
+<section id="hero">
+    <img src="{{ url_for('static',filename='img/earth.svg') }}" alt="" id="earth" class="earth" draggable="false">
+    <a class="btn index" href="dashboard">
+        Start Learning
+    </a>
+</section>
+<section id="about">
+    <h2>The only Language Learning<br>tool you’ll ever need!</h2>
+    <div class="about-item">
+        <p>Awesome exercises</p>
+        <img src="{{ url_for('static',filename='img/ae.svg') }}" alt="Awesome exercises illustration" draggable="false">
+    </div>
+    <div class="about-item">
+        <p>Different Languages</p>
+        <img src="{{ url_for('static',filename='img/dl.svg') }}" alt="Different Languages illustration" draggable="false">
+    </div>
+    <div class="about-item">
+        <p>Helpful FAQ Support</p>
+        <img src="{{ url_for('static',filename='img/hf.svg') }}" alt="Helpful FAQ Support illustration" draggable="false">
+    </div>
+</section>
+<section id="footer">
+
+    <a href="#hero"><img src="{{ url_for('static',filename='img/backtotop.svg') }}" class="backtotop" alt="Go back to top" onClick="ScrollToTop"></a>
+
+    <div class="footer-column">
+        <h1 class="footer-column-title"><a>Social Media</a></h1>
+        <h2 class="footer-column-item"><a>Instagram</a></h2>
+        <h2 class="footer-column-item"><a>Facebook</a></h2>
+        <h2 class="footer-column-item"><a>Snapchat</a></h2>
+    </div>
+    <div class="footer-column">
+        <h1 class="footer-column-title"><a>Contact Us</a></h1>
+        <h2 class="footer-column-item"><a>E-mail</a></h2>
+        <h2 class="footer-column-item"><a>Call Us</a></h2>
+        <h2 class="footer-column-item"><a>FAQ</a></h2>
+    </div>
+    <div class="footer-column">
+        <h1 class="footer-column-title"><a>Accreditations</a></h1>
+        <h2 class="footer-column-item"><a>Undraw.io</a></h2>
+        <h2 class="footer-column-item"><a>Duolingo</a></h2>
+        <h2 class="footer-column-item"><a>Nikobook</a></h2>
+    </div>
+    <p class="copyright">© Copyright 2021</p>
+</section>
+{% endblock main %}

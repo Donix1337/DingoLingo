@@ -1,0 +1,39 @@
+{% extends "structure.html" %}
+
+{% block main %}
+<div id="dashboard">
+    <h1 class="title fb">Spanish Excercises</h1>
+    <h2 class="subtitle fb">Checkpoint One</h2>
+
+    <div class="ex-c">
+        <a href="practice/1"><div class="ex-img"><img src="{{ url_for('static',filename='img/perfectum.svg') }}" alt=""></div></a>
+        <a href="practice/1"><h3 class="ex-name">Perfectum</h3></a>
+    </div>
+    <div class="ex-c">
+        <a href="practice/2"><div class="ex-img"><img src="{{ url_for('static',filename='img/past_tense.svg') }}" alt=""></div></a>
+        <a href="practice/2"><h3 class="ex-name">Futurum</h3></a>
+    </div>
+    <div class="ex-c">
+        <a href="practice/3"><div class="ex-img"><img src="{{ url_for('static',filename='img/present.svg') }}" alt=""></div></a>
+        <a href="practice/3"><h3 class="ex-name">Present</h3></a>
+    </div>
+    <div class="ex-c">
+        <a href="practice/4"><div class="ex-img"><img src="{{ url_for('static',filename='img/extra.svg') }}" alt=""></div></a>
+        <a href="practice/4"><h3 class="ex-name">Extra 1</h3></a>
+    </div>
+    <div class="ex-c">
+        <a href="practice/5"><div class="ex-img"><img src="{{ url_for('static',filename='img/extra.svg') }}" alt=""></div></a>
+        <a href="practice/5"><h3 class="ex-name">Extra 2</h3></a>
+    </div>
+    <div class="ex-c">
+        <a href="practice/6"><div class="ex-img"><img src="{{ url_for('static',filename='img/extra.svg') }}" alt=""></div></a>
+        <a href="practice/6"><h3 class="ex-name">Extra 3</h3></a>
+    </div>
+
+    <div class="dashfooter">
+        <img src="{{ url_for('static',filename='img/dashfooter.svg') }}" alt="All Done Here" class="dashfooter-img">
+        <h1 class="title">All Done!</h1>
+        <h2 class="subtitle shade">Come back later<br>to practice more</h2>
+    </div>
+</div>
+{% endblock main %}
